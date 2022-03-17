@@ -69,10 +69,10 @@ public class Panel extends  JPanel{
         add(numbers[0]);
         for(int x = 0; x < 3 ; x++) {
             for (int y = 0;y < 3;y++) {
-                numbers[x * 3 + y + 1] = new JButton((x * 3 + y + 1) + "");
-                numbers[x * 3 + y + 1].setBounds(x * (50 + 10) + 10, y * (50 + 10) + 70, 50, 50);
-                numbers[x * 3 + y + 1].setFont(font);
-                add(numbers[x * 3 + y + 1]);
+                numbers[y * 3 + x + 1] = new JButton((y * 3 + x + 1) + "");
+                numbers[y * 3 + x + 1].setBounds(x * (50 + 10) + 10, y * (50 + 10) + 70, 50, 50);
+                numbers[y * 3 + x + 1].setFont(font);
+                add(numbers[y * 3 + x + 1]);
             }
         }
        output.setBounds(10,10,245,50);
